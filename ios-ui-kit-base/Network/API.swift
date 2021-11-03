@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class API {
     let baseUrl: String
@@ -32,6 +33,7 @@ class API {
         if let authorizationValue = getAuthorizationValue(forEndpoint: endpoint) {
             request.setValue(authorizationValue, forHTTPHeaderField: "Authorization")
         }
+        request.setValue(UIDevice.current.identifierForVendor?.uuidString, forHTTPHeaderField: "deviceId")
         return request
     }
     

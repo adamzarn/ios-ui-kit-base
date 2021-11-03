@@ -28,12 +28,15 @@ class Network {
                 completion(nil)
                 return
             }
-            guard let loginResponse = try? JSONDecoder().decode(LoginResponse.self, from: data) else {
+            do {
+                let loginResponse = try JSONDecoder().decode(LoginResponse.self, from: data)
+                loginResponse.save()
+                completion(loginResponse)
+            } catch {
+                print(error)
                 completion(nil)
                 return
             }
-            loginResponse.save()
-            completion(loginResponse)
         }).resume()
     }
     
@@ -50,6 +53,26 @@ class Network {
                 Keychain.clear()
                 UserDefaultsUtility.clear()
                 onSuccess()
+            }
+        }).resume()
+    }
+    
+    func getFeed(completion: @escaping ([Post]) -> Void) {
+        guard let request = api.getRequest(forEndpoint: .getFeed) else {
+            completion([])
+            return
+        }
+        URLSession.shared.dataTask(with: request, completionHandler: { data, response, error in
+            guard let data = data else {
+                completion([])
+                return
+            }
+            do {
+                let posts = try JSONDecoder().decode([Post].self, from: data)
+                completion(posts)
+            } catch {
+                print(error)
+                completion([])
             }
         }).resume()
     }

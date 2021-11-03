@@ -13,7 +13,7 @@ struct User: Codable {
     let lastName: String
     let username: String
     let email: String
-    let profilePhotoUrl: String
+    let profilePhotoUrl: String?
     let createdAt: String
     let updatedAt: String
     let isAdmin: Bool

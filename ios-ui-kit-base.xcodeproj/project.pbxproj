@@ -30,6 +30,7 @@
 		DB488FA22732287400471CD1 /* StoryboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488FA12732287400471CD1 /* StoryboardIdentifier.swift */; };
 		DB488FA52732289300471CD1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488FA42732289300471CD1 /* UIViewController+Extension.swift */; };
 		DB488FA8273228BF00471CD1 /* SecureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488FA7273228BF00471CD1 /* SecureViewController.swift */; };
+		DB488FAA2732362800471CD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488FA92732362800471CD1 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		DB488FA12732287400471CD1 /* StoryboardIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifier.swift; sourceTree = "<group>"; };
 		DB488FA42732289300471CD1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		DB488FA7273228BF00471CD1 /* SecureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureViewController.swift; sourceTree = "<group>"; };
+		DB488FA92732362800471CD1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				DB488F8C2731B48200471CD1 /* User.swift */,
+				DB488FA92732362800471CD1 /* Post.swift */,
 				DB488F912731B9EF00471CD1 /* LoginResponse.swift */,
 				DB488FA12732287400471CD1 /* StoryboardIdentifier.swift */,
 			);
@@ -363,6 +366,7 @@
 				DB488F562731B20500471CD1 /* AppDelegate.swift in Sources */,
 				DB488F902731B7DB00471CD1 /* Network.swift in Sources */,
 				DB488F922731B9EF00471CD1 /* LoginResponse.swift in Sources */,
+				DB488FAA2732362800471CD1 /* Post.swift in Sources */,
 				DB488F942731BBEC00471CD1 /* API.swift in Sources */,
 				DB488F582731B20500471CD1 /* SceneDelegate.swift in Sources */,
 			);

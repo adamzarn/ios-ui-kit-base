@@ -13,6 +13,13 @@ class FeedViewController: SecureViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Network().getFeed(completion: { posts in
+            print(posts)
+        })
+    }
+    
     @IBAction func didSelectLogout(_ sender: Any) {
         Network().logout(onSuccess: {
             self.presentLoginViewController(animated: true)

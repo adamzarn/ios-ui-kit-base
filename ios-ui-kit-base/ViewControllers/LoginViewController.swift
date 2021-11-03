@@ -17,7 +17,11 @@ class LoginViewController: UIViewController, StoryboardLoadable {
     @IBAction func didSelectLogin(_ sender: Any) {
         Network().login(email: "sp@gmail.com",
                         password: "123456",
-                        completion: { _ in
+                        completion: { loginResponse in
+            guard loginResponse != nil else {
+                print("Failure")
+                return
+            }
             DispatchQueue.main.async {
                 self.dismiss(animated: true)
             }

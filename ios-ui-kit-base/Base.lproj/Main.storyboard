@@ -8,53 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Feed-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="FeedViewController" title="Feed" id="BYZ-38-t0r" customClass="FeedViewController" customModule="ios_ui_kit_base" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cG-dh-I1x">
-                                <rect key="frame" x="172.5" y="432.5" width="69.5" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
-                                <connections>
-                                    <action selector="didSelectLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G0X-wS-eSR"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="0cG-dh-I1x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KgU-bz-MQx"/>
-                            <constraint firstItem="0cG-dh-I1x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z6v-Ya-xtl"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Feed" id="L37-wq-rYT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="448" y="84"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="jy8-OP-Uxg">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JAO-xq-5yY" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sad-xU-1af">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="P8R-0T-8fR" kind="relationship" relationship="viewControllers" id="e6x-0g-sFS"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oGa-F8-KfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1004" y="84"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="AvO-bF-Lk1">
             <objects>
@@ -92,10 +45,27 @@
             </objects>
             <point key="canvasLocation" x="-1004.3478260869566" y="-613.39285714285711"/>
         </scene>
-        <!--Feed-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="jy8-OP-Uxg">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JAO-xq-5yY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sad-xU-1af">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="P8R-0T-8fR" kind="relationship" relationship="viewControllers" id="e6x-0g-sFS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGa-F8-KfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1004" y="84"/>
+        </scene>
+        <!--Feed Navigation-->
         <scene sceneID="CYl-gY-li4">
             <objects>
-                <navigationController title="Feed" automaticallyAdjustsScrollViewInsets="NO" id="P8R-0T-8fR" sceneMemberID="viewController">
+                <navigationController title="Feed Navigation" automaticallyAdjustsScrollViewInsets="NO" id="P8R-0T-8fR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="eMx-6S-nJO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="oWk-xV-z7f">
@@ -110,6 +80,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dKd-ID-kg2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-272.46376811594206" y="83.705357142857139"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FeedViewController" title="Feed" id="BYZ-38-t0r" customClass="FeedViewController" customModule="ios_ui_kit_base" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cG-dh-I1x">
+                                <rect key="frame" x="172.5" y="432.5" width="69.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="didSelectLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G0X-wS-eSR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0cG-dh-I1x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KgU-bz-MQx"/>
+                            <constraint firstItem="0cG-dh-I1x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z6v-Ya-xtl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Feed" id="L37-wq-rYT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="84"/>
         </scene>
     </scenes>
     <resources>
