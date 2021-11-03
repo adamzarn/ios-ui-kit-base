@@ -9,13 +9,27 @@
 /* Begin PBXBuildFile section */
 		DB488F562731B20500471CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F552731B20500471CD1 /* AppDelegate.swift */; };
 		DB488F582731B20500471CD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F572731B20500471CD1 /* SceneDelegate.swift */; };
-		DB488F5A2731B20500471CD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F592731B20500471CD1 /* ViewController.swift */; };
+		DB488F5A2731B20500471CD1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F592731B20500471CD1 /* FeedViewController.swift */; };
 		DB488F5D2731B20500471CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB488F5B2731B20500471CD1 /* Main.storyboard */; };
 		DB488F5F2731B20600471CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB488F5E2731B20600471CD1 /* Assets.xcassets */; };
 		DB488F622731B20600471CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB488F602731B20600471CD1 /* LaunchScreen.storyboard */; };
 		DB488F6D2731B20600471CD1 /* ios_ui_kit_baseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F6C2731B20600471CD1 /* ios_ui_kit_baseTests.swift */; };
 		DB488F772731B20600471CD1 /* ios_ui_kit_baseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F762731B20600471CD1 /* ios_ui_kit_baseUITests.swift */; };
 		DB488F792731B20600471CD1 /* ios_ui_kit_baseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F782731B20600471CD1 /* ios_ui_kit_baseUITestsLaunchTests.swift */; };
+		DB488F882731B2F000471CD1 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F872731B2F000471CD1 /* Keychain.swift */; };
+		DB488F8A2731B34200471CD1 /* UserDefaultsUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F892731B34200471CD1 /* UserDefaultsUtility.swift */; };
+		DB488F8D2731B48200471CD1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F8C2731B48200471CD1 /* User.swift */; };
+		DB488F902731B7DB00471CD1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F8F2731B7DB00471CD1 /* Network.swift */; };
+		DB488F922731B9EF00471CD1 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F912731B9EF00471CD1 /* LoginResponse.swift */; };
+		DB488F942731BBEC00471CD1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F932731BBEC00471CD1 /* API.swift */; };
+		DB488F962731DCC400471CD1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F952731DCC400471CD1 /* Endpoint.swift */; };
+		DB488F992731DF1F00471CD1 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F982731DF1F00471CD1 /* Authorization.swift */; };
+		DB488F9B273220A600471CD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F9A273220A600471CD1 /* LoginViewController.swift */; };
+		DB488F9E2732282000471CD1 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F9D2732282000471CD1 /* StoryboardLoadable.swift */; };
+		DB488FA02732284C00471CD1 /* StoryboardSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F9F2732284C00471CD1 /* StoryboardSelector.swift */; };
+		DB488FA22732287400471CD1 /* StoryboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488FA12732287400471CD1 /* StoryboardIdentifier.swift */; };
+		DB488FA52732289300471CD1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488FA42732289300471CD1 /* UIViewController+Extension.swift */; };
+		DB488FA8273228BF00471CD1 /* SecureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488FA7273228BF00471CD1 /* SecureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +53,7 @@
 		DB488F522731B20500471CD1 /* ios-ui-kit-base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-ui-kit-base.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB488F552731B20500471CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB488F572731B20500471CD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB488F592731B20500471CD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB488F592731B20500471CD1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		DB488F5C2731B20500471CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB488F5E2731B20600471CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB488F612731B20600471CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,20 @@
 		DB488F722731B20600471CD1 /* ios-ui-kit-baseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-ui-kit-baseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB488F762731B20600471CD1 /* ios_ui_kit_baseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_ui_kit_baseUITests.swift; sourceTree = "<group>"; };
 		DB488F782731B20600471CD1 /* ios_ui_kit_baseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_ui_kit_baseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB488F872731B2F000471CD1 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		DB488F892731B34200471CD1 /* UserDefaultsUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtility.swift; sourceTree = "<group>"; };
+		DB488F8C2731B48200471CD1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DB488F8F2731B7DB00471CD1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DB488F912731B9EF00471CD1 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		DB488F932731BBEC00471CD1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		DB488F952731DCC400471CD1 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		DB488F982731DF1F00471CD1 /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		DB488F9A273220A600471CD1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DB488F9D2732282000471CD1 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		DB488F9F2732284C00471CD1 /* StoryboardSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSelector.swift; sourceTree = "<group>"; };
+		DB488FA12732287400471CD1 /* StoryboardIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifier.swift; sourceTree = "<group>"; };
+		DB488FA42732289300471CD1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		DB488FA7273228BF00471CD1 /* SecureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +129,12 @@
 			children = (
 				DB488F552731B20500471CD1 /* AppDelegate.swift */,
 				DB488F572731B20500471CD1 /* SceneDelegate.swift */,
-				DB488F592731B20500471CD1 /* ViewController.swift */,
+				DB488F8B2731B47400471CD1 /* Models */,
+				DB488FA6273228A700471CD1 /* ViewControllers */,
+				DB488F972731DF0600471CD1 /* Network */,
+				DB488FA32732288400471CD1 /* Extensions */,
+				DB488F9C2732280D00471CD1 /* Protocols */,
+				DB488F862731B2E000471CD1 /* Utilities */,
 				DB488F5B2731B20500471CD1 /* Main.storyboard */,
 				DB488F5E2731B20600471CD1 /* Assets.xcassets */,
 				DB488F602731B20600471CD1 /* LaunchScreen.storyboard */,
@@ -125,6 +158,63 @@
 				DB488F782731B20600471CD1 /* ios_ui_kit_baseUITestsLaunchTests.swift */,
 			);
 			path = "ios-ui-kit-baseUITests";
+			sourceTree = "<group>";
+		};
+		DB488F862731B2E000471CD1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DB488F872731B2F000471CD1 /* Keychain.swift */,
+				DB488F892731B34200471CD1 /* UserDefaultsUtility.swift */,
+				DB488F9F2732284C00471CD1 /* StoryboardSelector.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DB488F8B2731B47400471CD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB488F8C2731B48200471CD1 /* User.swift */,
+				DB488F912731B9EF00471CD1 /* LoginResponse.swift */,
+				DB488FA12732287400471CD1 /* StoryboardIdentifier.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB488F972731DF0600471CD1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DB488F8F2731B7DB00471CD1 /* Network.swift */,
+				DB488F932731BBEC00471CD1 /* API.swift */,
+				DB488F952731DCC400471CD1 /* Endpoint.swift */,
+				DB488F982731DF1F00471CD1 /* Authorization.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DB488F9C2732280D00471CD1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DB488F9D2732282000471CD1 /* StoryboardLoadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DB488FA32732288400471CD1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB488FA42732289300471CD1 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DB488FA6273228A700471CD1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB488FA7273228BF00471CD1 /* SecureViewController.swift */,
+				DB488F9A273220A600471CD1 /* LoginViewController.swift */,
+				DB488F592731B20500471CD1 /* FeedViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +348,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB488F5A2731B20500471CD1 /* ViewController.swift in Sources */,
+				DB488FA52732289300471CD1 /* UIViewController+Extension.swift in Sources */,
+				DB488F9B273220A600471CD1 /* LoginViewController.swift in Sources */,
+				DB488F8A2731B34200471CD1 /* UserDefaultsUtility.swift in Sources */,
+				DB488F5A2731B20500471CD1 /* FeedViewController.swift in Sources */,
+				DB488F8D2731B48200471CD1 /* User.swift in Sources */,
+				DB488F882731B2F000471CD1 /* Keychain.swift in Sources */,
+				DB488FA02732284C00471CD1 /* StoryboardSelector.swift in Sources */,
+				DB488FA8273228BF00471CD1 /* SecureViewController.swift in Sources */,
+				DB488F992731DF1F00471CD1 /* Authorization.swift in Sources */,
+				DB488FA22732287400471CD1 /* StoryboardIdentifier.swift in Sources */,
+				DB488F962731DCC400471CD1 /* Endpoint.swift in Sources */,
+				DB488F9E2732282000471CD1 /* StoryboardLoadable.swift in Sources */,
 				DB488F562731B20500471CD1 /* AppDelegate.swift in Sources */,
+				DB488F902731B7DB00471CD1 /* Network.swift in Sources */,
+				DB488F922731B9EF00471CD1 /* LoginResponse.swift in Sources */,
+				DB488F942731BBEC00471CD1 /* API.swift in Sources */,
 				DB488F582731B20500471CD1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
