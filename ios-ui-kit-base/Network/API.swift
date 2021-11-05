@@ -33,7 +33,7 @@ class API {
         if let authorizationValue = getAuthorizationValue(forEndpoint: endpoint) {
             request.setValue(authorizationValue, forHTTPHeaderField: "Authorization")
         }
-        request.setValue(UIDevice.current.identifierForVendor?.uuidString, forHTTPHeaderField: "deviceId")
+        request.setValue(UIDevice.current.identifierForVendor?.uuidString, forHTTPHeaderField: "Device-ID")
         return request
     }
     

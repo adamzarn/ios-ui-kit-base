@@ -32,7 +32,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ypp-26-b9x"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HRW-lw-0J5" firstAttribute="centerX" secondItem="ah8-XY-eUW" secondAttribute="centerX" id="AaB-QH-eW7"/>
                             <constraint firstItem="HRW-lw-0J5" firstAttribute="centerY" secondItem="ah8-XY-eUW" secondAttribute="centerY" id="GdE-wj-AWZ"/>
@@ -45,12 +45,13 @@
             </objects>
             <point key="canvasLocation" x="-1004.3478260869566" y="-613.39285714285711"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="jy8-OP-Uxg">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JAO-xq-5yY" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JAO-xq-5yY" customClass="MainTabBarController" customModule="ios_ui_kit_base" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sad-xU-1af">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -89,27 +90,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cG-dh-I1x">
-                                <rect key="frame" x="172.5" y="432.5" width="69.5" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
-                                <connections>
-                                    <action selector="didSelectLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G0X-wS-eSR"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jt3-A2-wLn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0cG-dh-I1x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KgU-bz-MQx"/>
-                            <constraint firstItem="0cG-dh-I1x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z6v-Ya-xtl"/>
+                            <constraint firstAttribute="bottom" secondItem="jt3-A2-wLn" secondAttribute="bottom" id="CBH-ZA-uCD"/>
+                            <constraint firstItem="jt3-A2-wLn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tRe-Bm-cO2"/>
+                            <constraint firstItem="jt3-A2-wLn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tVy-0A-klu"/>
+                            <constraint firstItem="jt3-A2-wLn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zzK-o0-qJ0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Feed" id="L37-wq-rYT"/>
+                    <connections>
+                        <outlet property="tableView" destination="jt3-A2-wLn" id="zrm-Su-olg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448" y="84"/>
+            <point key="canvasLocation" x="447.82608695652175" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>

@@ -25,17 +25,14 @@ class Network {
         URLSession.shared.dataTask(with: request,
                                    completionHandler: { data, _, _ in
             guard let data = data else {
-                completion(nil)
-                return
+                completion(nil); return
             }
             do {
                 let loginResponse = try JSONDecoder().decode(LoginResponse.self, from: data)
                 loginResponse.save()
                 completion(loginResponse)
             } catch {
-                print(error)
-                completion(nil)
-                return
+                completion(nil); return
             }
         }).resume()
     }
@@ -43,8 +40,7 @@ class Network {
     func logout(onSuccess: @escaping () -> Void,
                 onFailure: @escaping (Error?) -> Void) {
         guard let request = api.getRequest(forEndpoint: .logout) else {
-            onFailure(nil)
-            return
+            onFailure(nil); return
         }
         URLSession.shared.dataTask(with: request, completionHandler: { _, _, error in
             if let error = error {
@@ -59,21 +55,37 @@ class Network {
     
     func getFeed(completion: @escaping ([Post]) -> Void) {
         guard let request = api.getRequest(forEndpoint: .getFeed) else {
-            completion([])
-            return
+            completion([]); return
         }
         URLSession.shared.dataTask(with: request, completionHandler: { data, response, error in
             guard let data = data else {
-                completion([])
-                return
+                completion([]); return
             }
             do {
                 let posts = try JSONDecoder().decode([Post].self, from: data)
                 completion(posts)
             } catch {
-                print(error)
                 completion([])
             }
+        }).resume()
+    }
+    
+    func getProfilePhoto(urlString: String?,
+                         completion: @escaping (Data?) -> Void) {
+        guard let urlString = urlString, let url = URL(string: urlString) else {
+            completion(nil); return
+        }
+        if let data = ImageCache.shared.getData(forKey: urlString) {
+            completion(data); return
+        }
+        let urlRequest = URLRequest(url: url)
+        URLSession.shared.dataTask(with: urlRequest, completionHandler: { data, _, error in
+            guard let data = data else {
+                completion(nil)
+                return
+            }
+            ImageCache.shared.setData(data, forKey: urlString)
+            completion(data)
         }).resume()
     }
 }

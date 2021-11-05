@@ -12,4 +12,12 @@ extension UIViewController {
     static var identifier: String {
         return String(describing: self)
     }
+    
+    func presentLoginViewController(animated: Bool) {
+        DispatchQueue.main.async {
+            let loginViewController = LoginViewController.loadFromStoryboard()
+            loginViewController.modalPresentationStyle = .fullScreen
+            self.present(loginViewController, animated: animated)
+        }
+    }
 }

@@ -7,21 +7,53 @@
 
 import UIKit
 
-class FeedViewController: SecureViewController {
+class FeedViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
+    
+    let viewModel = FeedViewModel()
+    let dataSource = FeedTableViewDataSource()
+    let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureNavigationItem()
+        configureTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        Network().getFeed(completion: { posts in
-            print(posts)
+        refresh()
+    }
+    
+    private func configureNavigationItem() {
+        let rightBarButtonItem = UIBarButtonItem(title: "Logout",
+                                                 style: .plain,
+                                                 target: self,
+                                                 action: #selector(logout))
+        navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
+    
+    private func configureTableView() {
+        viewModel.registerAllCellsAndHeaderFooters(for: tableView)
+        tableView.dataSource = dataSource
+        tableView.delegate = dataSource
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+        tableView.separatorStyle = .none
+    }
+    
+    @objc private func refresh() {
+        viewModel.getFeed(completion: { posts in
+            DispatchQueue.main.async {
+                self.dataSource.posts = posts
+                self.tableView.reloadData()
+                self.refreshControl.endRefreshing()
+            }
         })
     }
     
-    @IBAction func didSelectLogout(_ sender: Any) {
-        Network().logout(onSuccess: {
+    @objc func logout() {
+        viewModel.logout(onSuccess: {
             self.presentLoginViewController(animated: true)
         }, onFailure: { error in
             print(error as Any)

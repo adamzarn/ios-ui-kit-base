@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0A228B2734BEF300AFE26A /* FeedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A228A2734BEF300AFE26A /* FeedTableViewDataSource.swift */; };
 		DB488F562731B20500471CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F552731B20500471CD1 /* AppDelegate.swift */; };
 		DB488F582731B20500471CD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F572731B20500471CD1 /* SceneDelegate.swift */; };
 		DB488F5A2731B20500471CD1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F592731B20500471CD1 /* FeedViewController.swift */; };
@@ -29,8 +30,17 @@
 		DB488FA02732284C00471CD1 /* StoryboardSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F9F2732284C00471CD1 /* StoryboardSelector.swift */; };
 		DB488FA22732287400471CD1 /* StoryboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488FA12732287400471CD1 /* StoryboardIdentifier.swift */; };
 		DB488FA52732289300471CD1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488FA42732289300471CD1 /* UIViewController+Extension.swift */; };
-		DB488FA8273228BF00471CD1 /* SecureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488FA7273228BF00471CD1 /* SecureViewController.swift */; };
 		DB488FAA2732362800471CD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488FA92732362800471CD1 /* Post.swift */; };
+		DB6B183627358AED006F6C26 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B183527358AED006F6C26 /* PostTableViewCell.swift */; };
+		DB6B183827358B0A006F6C26 /* PostTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B183727358B0A006F6C26 /* PostTableViewCellViewModel.swift */; };
+		DB6B183A27358B3A006F6C26 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6B183927358B3A006F6C26 /* PostTableViewCell.xib */; };
+		DB6B183C27358C7C006F6C26 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B183B27358C7C006F6C26 /* NibLoadable.swift */; };
+		DB6B183E27358CA6006F6C26 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B183D27358CA6006F6C26 /* UIView+Extension.swift */; };
+		DB6B184027358DD7006F6C26 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B183F27358DD7006F6C26 /* UITableView+Extension.swift */; };
+		DB6B184227359089006F6C26 /* TableViewRegistrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B184127359089006F6C26 /* TableViewRegistrationManager.swift */; };
+		DB6B18442735919F006F6C26 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B18432735919F006F6C26 /* FeedViewModel.swift */; };
+		DB6B18462735CAAB006F6C26 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B18452735CAAB006F6C26 /* ImageCache.swift */; };
+		DB6B18482735D0D9006F6C26 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B18472735D0D9006F6C26 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB0A228A2734BEF300AFE26A /* FeedTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewDataSource.swift; sourceTree = "<group>"; };
 		DB488F522731B20500471CD1 /* ios-ui-kit-base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-ui-kit-base.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB488F552731B20500471CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB488F572731B20500471CD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,8 +88,17 @@
 		DB488F9F2732284C00471CD1 /* StoryboardSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSelector.swift; sourceTree = "<group>"; };
 		DB488FA12732287400471CD1 /* StoryboardIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifier.swift; sourceTree = "<group>"; };
 		DB488FA42732289300471CD1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		DB488FA7273228BF00471CD1 /* SecureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureViewController.swift; sourceTree = "<group>"; };
 		DB488FA92732362800471CD1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DB6B183527358AED006F6C26 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		DB6B183727358B0A006F6C26 /* PostTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		DB6B183927358B3A006F6C26 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		DB6B183B27358C7C006F6C26 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		DB6B183D27358CA6006F6C26 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		DB6B183F27358DD7006F6C26 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		DB6B184127359089006F6C26 /* TableViewRegistrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRegistrationManager.swift; sourceTree = "<group>"; };
+		DB6B18432735919F006F6C26 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		DB6B18452735CAAB006F6C26 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		DB6B18472735D0D9006F6C26 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +126,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB0A22892734BEE000AFE26A /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				DB0A228A2734BEF300AFE26A /* FeedTableViewDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		DB0A228C2734BF1B00AFE26A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B18432735919F006F6C26 /* FeedViewModel.swift */,
+				DB6B183727358B0A006F6C26 /* PostTableViewCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		DB488F492731B20500471CD1 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +169,10 @@
 				DB488F552731B20500471CD1 /* AppDelegate.swift */,
 				DB488F572731B20500471CD1 /* SceneDelegate.swift */,
 				DB488F8B2731B47400471CD1 /* Models */,
+				DB6B183427358AD4006F6C26 /* Views */,
 				DB488FA6273228A700471CD1 /* ViewControllers */,
+				DB0A228C2734BF1B00AFE26A /* ViewModels */,
+				DB0A22892734BEE000AFE26A /* DataSources */,
 				DB488F972731DF0600471CD1 /* Network */,
 				DB488FA32732288400471CD1 /* Extensions */,
 				DB488F9C2732280D00471CD1 /* Protocols */,
@@ -168,6 +208,7 @@
 				DB488F872731B2F000471CD1 /* Keychain.swift */,
 				DB488F892731B34200471CD1 /* UserDefaultsUtility.swift */,
 				DB488F9F2732284C00471CD1 /* StoryboardSelector.swift */,
+				DB6B18452735CAAB006F6C26 /* ImageCache.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -198,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				DB488F9D2732282000471CD1 /* StoryboardLoadable.swift */,
+				DB6B183B27358C7C006F6C26 /* NibLoadable.swift */,
+				DB6B184127359089006F6C26 /* TableViewRegistrationManager.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -206,6 +249,8 @@
 			isa = PBXGroup;
 			children = (
 				DB488FA42732289300471CD1 /* UIViewController+Extension.swift */,
+				DB6B183D27358CA6006F6C26 /* UIView+Extension.swift */,
+				DB6B183F27358DD7006F6C26 /* UITableView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,11 +258,20 @@
 		DB488FA6273228A700471CD1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DB488FA7273228BF00471CD1 /* SecureViewController.swift */,
+				DB6B18472735D0D9006F6C26 /* MainTabBarController.swift */,
 				DB488F9A273220A600471CD1 /* LoginViewController.swift */,
 				DB488F592731B20500471CD1 /* FeedViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB6B183427358AD4006F6C26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B183527358AED006F6C26 /* PostTableViewCell.swift */,
+				DB6B183927358B3A006F6C26 /* PostTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +381,7 @@
 				DB488F622731B20600471CD1 /* LaunchScreen.storyboard in Resources */,
 				DB488F5F2731B20600471CD1 /* Assets.xcassets in Resources */,
 				DB488F5D2731B20500471CD1 /* Main.storyboard in Resources */,
+				DB6B183A27358B3A006F6C26 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,21 +409,30 @@
 				DB488FA52732289300471CD1 /* UIViewController+Extension.swift in Sources */,
 				DB488F9B273220A600471CD1 /* LoginViewController.swift in Sources */,
 				DB488F8A2731B34200471CD1 /* UserDefaultsUtility.swift in Sources */,
+				DB0A228B2734BEF300AFE26A /* FeedTableViewDataSource.swift in Sources */,
 				DB488F5A2731B20500471CD1 /* FeedViewController.swift in Sources */,
+				DB6B183C27358C7C006F6C26 /* NibLoadable.swift in Sources */,
 				DB488F8D2731B48200471CD1 /* User.swift in Sources */,
+				DB6B184227359089006F6C26 /* TableViewRegistrationManager.swift in Sources */,
 				DB488F882731B2F000471CD1 /* Keychain.swift in Sources */,
+				DB6B183627358AED006F6C26 /* PostTableViewCell.swift in Sources */,
 				DB488FA02732284C00471CD1 /* StoryboardSelector.swift in Sources */,
-				DB488FA8273228BF00471CD1 /* SecureViewController.swift in Sources */,
+				DB6B183E27358CA6006F6C26 /* UIView+Extension.swift in Sources */,
+				DB6B18462735CAAB006F6C26 /* ImageCache.swift in Sources */,
+				DB6B18442735919F006F6C26 /* FeedViewModel.swift in Sources */,
 				DB488F992731DF1F00471CD1 /* Authorization.swift in Sources */,
 				DB488FA22732287400471CD1 /* StoryboardIdentifier.swift in Sources */,
+				DB6B18482735D0D9006F6C26 /* MainTabBarController.swift in Sources */,
 				DB488F962731DCC400471CD1 /* Endpoint.swift in Sources */,
 				DB488F9E2732282000471CD1 /* StoryboardLoadable.swift in Sources */,
 				DB488F562731B20500471CD1 /* AppDelegate.swift in Sources */,
 				DB488F902731B7DB00471CD1 /* Network.swift in Sources */,
+				DB6B183827358B0A006F6C26 /* PostTableViewCellViewModel.swift in Sources */,
 				DB488F922731B9EF00471CD1 /* LoginResponse.swift in Sources */,
 				DB488FAA2732362800471CD1 /* Post.swift in Sources */,
 				DB488F942731BBEC00471CD1 /* API.swift in Sources */,
 				DB488F582731B20500471CD1 /* SceneDelegate.swift in Sources */,
+				DB6B184027358DD7006F6C26 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
