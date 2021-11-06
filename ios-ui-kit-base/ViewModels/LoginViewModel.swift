@@ -10,8 +10,8 @@ import Foundation
 class LoginViewModel {
     let network: Network
 
-    var email: String = "sp@gmail.com"
-    var password: String = "123456"
+    var email: String = ""
+    var password: String = ""
     
     init(network: Network = Network()) {
         self.network = network

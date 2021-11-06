@@ -17,7 +17,7 @@ class FeedViewModel: TableViewRegistrationManager {
     }
     
     func getFeed(completion: @escaping ([Post]) -> Void) {
-        Network().getFeed(completion: { posts in
+        network.getFeed(completion: { posts in
             completion(posts)
         })
     }
