@@ -41,6 +41,7 @@
 		DB6B18442735919F006F6C26 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B18432735919F006F6C26 /* FeedViewModel.swift */; };
 		DB6B18462735CAAB006F6C26 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B18452735CAAB006F6C26 /* ImageCache.swift */; };
 		DB6B18482735D0D9006F6C26 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B18472735D0D9006F6C26 /* MainTabBarController.swift */; };
+		DB6B184A27361E0F006F6C26 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B184927361E0F006F6C26 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		DB6B18432735919F006F6C26 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		DB6B18452735CAAB006F6C26 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		DB6B18472735D0D9006F6C26 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		DB6B184927361E0F006F6C26 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		DB0A228C2734BF1B00AFE26A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DB6B184927361E0F006F6C26 /* LoginViewModel.swift */,
 				DB6B18432735919F006F6C26 /* FeedViewModel.swift */,
 				DB6B183727358B0A006F6C26 /* PostTableViewCellViewModel.swift */,
 			);
@@ -426,6 +429,7 @@
 				DB488F962731DCC400471CD1 /* Endpoint.swift in Sources */,
 				DB488F9E2732282000471CD1 /* StoryboardLoadable.swift in Sources */,
 				DB488F562731B20500471CD1 /* AppDelegate.swift in Sources */,
+				DB6B184A27361E0F006F6C26 /* LoginViewModel.swift in Sources */,
 				DB488F902731B7DB00471CD1 /* Network.swift in Sources */,
 				DB6B183827358B0A006F6C26 /* PostTableViewCellViewModel.swift in Sources */,
 				DB488F922731B9EF00471CD1 /* LoginResponse.swift in Sources */,

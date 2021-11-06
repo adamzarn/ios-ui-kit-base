@@ -13,11 +13,10 @@ extension UIViewController {
         return String(describing: self)
     }
     
-    func presentLoginViewController(animated: Bool) {
+    func setNewRootViewController<T:UIViewController>(ofType type: T.Type) where T:StoryboardLoadable {
         DispatchQueue.main.async {
-            let loginViewController = LoginViewController.loadFromStoryboard()
-            loginViewController.modalPresentationStyle = .fullScreen
-            self.present(loginViewController, animated: animated)
+            self.view.window?.rootViewController = T.loadFromStoryboard()
+            self.view.window?.makeKeyAndVisible()
         }
     }
 }

@@ -10,21 +10,18 @@ import UIKit
 
 class LoginViewController: UIViewController, StoryboardLoadable {
     
+    var viewModel: LoginViewModel = LoginViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func didSelectLogin(_ sender: Any) {
-        Network().login(email: "sp@gmail.com",
-                        password: "123456",
-                        completion: { loginResponse in
+        viewModel.login(completion: { loginResponse in
             guard loginResponse != nil else {
-                print("Failure")
-                return
+                print("Failure"); return
             }
-            DispatchQueue.main.async {
-                self.dismiss(animated: true)
-            }
+            self.setNewRootViewController(ofType: MainTabBarController.self)
         })
     }
 }

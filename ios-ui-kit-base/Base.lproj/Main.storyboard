@@ -48,7 +48,7 @@
         <!--Main Tab Bar Controller-->
         <scene sceneID="jy8-OP-Uxg">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JAO-xq-5yY" customClass="MainTabBarController" customModule="ios_ui_kit_base" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="JAO-xq-5yY" customClass="MainTabBarController" customModule="ios_ui_kit_base" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sad-xU-1af">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

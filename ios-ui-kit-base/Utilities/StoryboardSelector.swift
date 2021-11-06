@@ -13,7 +13,8 @@ class StoryboardSelector {
     
     var storyboard: UIStoryboard? {
         switch viewControllerIdentifier {
-        case LoginViewController.identifier: return getStoryboard(identifier: .main)
+        case LoginViewController.identifier,
+            MainTabBarController.identifier: return getStoryboard(identifier: .main)
         default: return nil
         }
     }

@@ -8,14 +8,8 @@
 import Foundation
 import UIKit
 
-class MainTabBarController: UITabBarController {
-    
+class MainTabBarController: UITabBarController, StoryboardLoadable {
     override func viewDidLoad() {
         super.viewDidLoad()
-        if Keychain.token != nil {
-            print("Logged In")
-        } else {
-            presentLoginViewController(animated: false)
-        }
     }
 }

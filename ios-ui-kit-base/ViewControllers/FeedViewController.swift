@@ -29,7 +29,7 @@ class FeedViewController: UIViewController {
         let rightBarButtonItem = UIBarButtonItem(title: "Logout",
                                                  style: .plain,
                                                  target: self,
-                                                 action: #selector(logout))
+                                                 action: #selector(didSelectLogout))
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
@@ -52,9 +52,9 @@ class FeedViewController: UIViewController {
         })
     }
     
-    @objc func logout() {
+    @objc func didSelectLogout() {
         viewModel.logout(onSuccess: {
-            self.presentLoginViewController(animated: true)
+            self.setNewRootViewController(ofType: LoginViewController.self)
         }, onFailure: { error in
             print(error as Any)
         })
