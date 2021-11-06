@@ -13,15 +13,15 @@ class PostTableViewCellViewModel {
     let network: Network
     
     var nameLabelText: String {
-        return "\(post.user.firstName) \(post.user.lastName)"
+        return post.user.fullName
     }
     
     var timeLabelText: String {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         guard let date = formatter.date(from: post.createdAt) else { return "" }
-        formatter.dateFormat = "M/d/yy H:mm"
-        return formatter.string(from: date)
+        formatter.dateFormat = "M/d/yy h:mm aa"
+        return formatter.string(from: date).lowercased()
     }
     
     var postLabelText: String {
@@ -34,9 +34,8 @@ class PostTableViewCellViewModel {
         self.network = network
     }
     
-    func getProfilePhoto(urlString: String?,
-                         completion: @escaping (UIImage?) -> Void) {
-        network.getProfilePhoto(urlString: urlString,
+    func getProfilePhoto(completion: @escaping (UIImage?) -> Void) {
+        network.getProfilePhoto(urlString: post.user.profilePhotoUrl,
                                 completion: { data in
             guard let data = data else {
                 completion(nil); return

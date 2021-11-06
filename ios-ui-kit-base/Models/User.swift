@@ -18,4 +18,8 @@ struct User: Codable {
     let updatedAt: String
     let isAdmin: Bool
     let isEmailVerified: Bool
+    
+    var fullName: String {
+        return "\(firstName) \(lastName)"
+    }
 }

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="CBM-BO-9ij">
-                                <rect key="frame" x="32" y="371.5" width="350" height="163"/>
+                                <rect key="frame" x="32" y="244" width="350" height="163"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NU1-es-xK1">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
@@ -51,7 +51,7 @@
                         <constraints>
                             <constraint firstItem="CBM-BO-9ij" firstAttribute="leading" secondItem="ypp-26-b9x" secondAttribute="leading" constant="32" id="31f-NX-se8"/>
                             <constraint firstItem="ypp-26-b9x" firstAttribute="trailing" secondItem="CBM-BO-9ij" secondAttribute="trailing" constant="32" id="6W8-fa-Jdj"/>
-                            <constraint firstItem="CBM-BO-9ij" firstAttribute="centerY" secondItem="ypp-26-b9x" secondAttribute="centerY" id="Ifn-IF-9Ip"/>
+                            <constraint firstItem="CBM-BO-9ij" firstAttribute="top" secondItem="ypp-26-b9x" secondAttribute="top" constant="200" id="IET-6P-k8s"/>
                         </constraints>
                     </view>
                     <connections>

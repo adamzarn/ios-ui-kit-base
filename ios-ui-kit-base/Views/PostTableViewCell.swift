@@ -19,6 +19,11 @@ class PostTableViewCell: UITableViewCell {
             nameLabel.text = viewModel.nameLabelText
             timeLabel.text = viewModel.timeLabelText
             postLabel.text = viewModel.postLabelText
+            viewModel.getProfilePhoto(completion: { image in
+                DispatchQueue.main.async {
+                    self.profilePhotoImageView.image = image
+                }
+            })
         }
     }
     
@@ -32,11 +37,5 @@ class PostTableViewCell: UITableViewCell {
         profilePhotoImageView.layer.borderColor = UIColor.separator.cgColor
         profilePhotoImageView.layer.borderWidth = 1
         profilePhotoImageView.contentMode = .scaleAspectFill
-        viewModel.getProfilePhoto(urlString: viewModel.post.user.profilePhotoUrl,
-                                  completion: { image in
-            DispatchQueue.main.async {
-                self.profilePhotoImageView.image = image
-            }
-        })
     }
 }
