@@ -42,6 +42,7 @@
 		DB6B18462735CAAB006F6C26 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B18452735CAAB006F6C26 /* ImageCache.swift */; };
 		DB6B18482735D0D9006F6C26 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B18472735D0D9006F6C26 /* MainTabBarController.swift */; };
 		DB6B184A27361E0F006F6C26 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B184927361E0F006F6C26 /* LoginViewModel.swift */; };
+		DB6B184C2736280D006F6C26 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B184B2736280C006F6C26 /* UIWindow+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		DB6B18452735CAAB006F6C26 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		DB6B18472735D0D9006F6C26 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DB6B184927361E0F006F6C26 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DB6B184B2736280C006F6C26 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 				DB488FA42732289300471CD1 /* UIViewController+Extension.swift */,
 				DB6B183D27358CA6006F6C26 /* UIView+Extension.swift */,
 				DB6B183F27358DD7006F6C26 /* UITableView+Extension.swift */,
+				DB6B184B2736280C006F6C26 /* UIWindow+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				DB488F8D2731B48200471CD1 /* User.swift in Sources */,
 				DB6B184227359089006F6C26 /* TableViewRegistrationManager.swift in Sources */,
 				DB488F882731B2F000471CD1 /* Keychain.swift in Sources */,
+				DB6B184C2736280D006F6C26 /* UIWindow+Extension.swift in Sources */,
 				DB6B183627358AED006F6C26 /* PostTableViewCell.swift in Sources */,
 				DB488FA02732284C00471CD1 /* StoryboardSelector.swift in Sources */,
 				DB6B183E27358CA6006F6C26 /* UIView+Extension.swift in Sources */,

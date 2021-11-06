@@ -18,13 +18,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = scene as? UIWindowScene else { return }
         let window = UIWindow(windowScene: windowScene)
-        if Keychain.token != nil {
-            window.rootViewController = MainTabBarController.loadFromStoryboard()
-        } else {
-            window.rootViewController = LoginViewController.loadFromStoryboard()
-        }
         self.window = window
-        window.makeKeyAndVisible()
+        if Keychain.token == nil {
+            window.setRootViewController(ofType: LoginViewController.self)
+        } else {
+            window.setRootViewController(ofType: MainTabBarController.self)
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

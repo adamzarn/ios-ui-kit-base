@@ -30,7 +30,7 @@ class LoginViewController: UIViewController, StoryboardLoadable {
             guard loginResponse != nil else {
                 print("Failure"); return
             }
-            self.setNewRootViewController(ofType: MainTabBarController.self)
+            self.setRootViewController(ofType: MainTabBarController.self)
         })
     }
     

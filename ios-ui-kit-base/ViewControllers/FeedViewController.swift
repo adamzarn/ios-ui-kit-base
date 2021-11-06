@@ -54,7 +54,7 @@ class FeedViewController: UIViewController {
     
     @objc func didSelectLogout() {
         viewModel.logout(onSuccess: {
-            self.setNewRootViewController(ofType: LoginViewController.self)
+            self.setRootViewController(ofType: LoginViewController.self)
         }, onFailure: { error in
             print(error as Any)
         })

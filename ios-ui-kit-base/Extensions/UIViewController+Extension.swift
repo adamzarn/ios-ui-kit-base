@@ -13,10 +13,9 @@ extension UIViewController {
         return String(describing: self)
     }
     
-    func setNewRootViewController<T:UIViewController>(ofType type: T.Type) where T:StoryboardLoadable {
+    func setRootViewController<T:UIViewController>(ofType type: T.Type) where T:StoryboardLoadable {
         DispatchQueue.main.async {
-            self.view.window?.rootViewController = T.loadFromStoryboard()
-            self.view.window?.makeKeyAndVisible()
+            self.view.window?.setRootViewController(ofType: type)
         }
     }
 }
