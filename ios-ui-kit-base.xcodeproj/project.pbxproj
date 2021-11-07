@@ -43,6 +43,8 @@
 		DB6B18482735D0D9006F6C26 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B18472735D0D9006F6C26 /* MainTabBarController.swift */; };
 		DB6B184A27361E0F006F6C26 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B184927361E0F006F6C26 /* LoginViewModel.swift */; };
 		DB6B184C2736280D006F6C26 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B184B2736280C006F6C26 /* UIWindow+Extension.swift */; };
+		DB7B47DE273780790009CE97 /* NotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7B47DD273780790009CE97 /* NotificationCenter+Extension.swift */; };
+		DB7B47E0273780930009CE97 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7B47DF273780930009CE97 /* Notification+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		DB6B18472735D0D9006F6C26 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DB6B184927361E0F006F6C26 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DB6B184B2736280C006F6C26 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		DB7B47DD273780790009CE97 /* NotificationCenter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extension.swift"; sourceTree = "<group>"; };
+		DB7B47DF273780930009CE97 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +261,8 @@
 				DB6B183D27358CA6006F6C26 /* UIView+Extension.swift */,
 				DB6B183F27358DD7006F6C26 /* UITableView+Extension.swift */,
 				DB6B184B2736280C006F6C26 /* UIWindow+Extension.swift */,
+				DB7B47DD273780790009CE97 /* NotificationCenter+Extension.swift */,
+				DB7B47DF273780930009CE97 /* Notification+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -413,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB488FA52732289300471CD1 /* UIViewController+Extension.swift in Sources */,
+				DB7B47E0273780930009CE97 /* Notification+Extension.swift in Sources */,
 				DB488F9B273220A600471CD1 /* LoginViewController.swift in Sources */,
 				DB488F8A2731B34200471CD1 /* UserDefaultsUtility.swift in Sources */,
 				DB0A228B2734BEF300AFE26A /* FeedTableViewDataSource.swift in Sources */,
@@ -429,6 +436,7 @@
 				DB6B18442735919F006F6C26 /* FeedViewModel.swift in Sources */,
 				DB488F992731DF1F00471CD1 /* Authorization.swift in Sources */,
 				DB488FA22732287400471CD1 /* StoryboardIdentifier.swift in Sources */,
+				DB7B47DE273780790009CE97 /* NotificationCenter+Extension.swift in Sources */,
 				DB6B18482735D0D9006F6C26 /* MainTabBarController.swift in Sources */,
 				DB488F962731DCC400471CD1 /* Endpoint.swift in Sources */,
 				DB488F9E2732282000471CD1 /* StoryboardLoadable.swift in Sources */,

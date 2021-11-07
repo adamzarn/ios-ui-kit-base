@@ -9,7 +9,8 @@ import Foundation
 
 class LoginViewModel {
     let network: Network
-
+    
+    var keyboardIsShowing: Bool = false
     var email: String = ""
     var password: String = ""
     

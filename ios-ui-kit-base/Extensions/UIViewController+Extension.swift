@@ -18,4 +18,29 @@ extension UIViewController {
             self.view.window?.setRootViewController(ofType: type)
         }
     }
+    
+    func startObservingKeyboard(keyboardWillShow: Selector? = nil,
+                                keyboardDidShow: Selector? = nil,
+                                keyboardWillHide: Selector? = nil,
+                                keyboardDidHide: Selector? = nil) {
+        if let keyboardWillShow = keyboardWillShow {
+            observe(UIResponder.keyboardWillShowNotification, selector: keyboardWillShow)
+
+        }
+        if let keyboardDidShow = keyboardDidShow {
+            observe(UIResponder.keyboardDidShowNotification, selector: keyboardDidShow)
+
+        }
+        if let keyboardWillHide = keyboardWillHide {
+            observe(UIResponder.keyboardWillHideNotification, selector: keyboardWillHide)
+
+        }
+        if let keyboardDidHide = keyboardDidHide {
+            observe(UIResponder.keyboardDidHideNotification, selector: keyboardDidHide)
+        }
+    }
+    
+    func observe(_ name: NSNotification.Name?, selector: Selector) {
+        NotificationCenter.default.addObserver(self, selector: selector, name: name)
+    }
 }

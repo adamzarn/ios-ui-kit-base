@@ -16,8 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vot-XK-FOk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="327.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ctK-Bc-0bE">
+                                        <rect key="frame" x="125" y="82" width="164" height="163.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ctK-Bc-0bE" secondAttribute="height" multiplier="1:1" id="ZJx-6E-mzr"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ctK-Bc-0bE" firstAttribute="height" secondItem="vot-XK-FOk" secondAttribute="height" multiplier="0.5" id="Lci-Pr-gzB"/>
+                                    <constraint firstItem="ctK-Bc-0bE" firstAttribute="centerY" secondItem="vot-XK-FOk" secondAttribute="centerY" id="fBw-dH-Utc"/>
+                                    <constraint firstItem="ctK-Bc-0bE" firstAttribute="centerX" secondItem="vot-XK-FOk" secondAttribute="centerX" id="fJI-H7-CnX"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="CBM-BO-9ij">
-                                <rect key="frame" x="32" y="244" width="350" height="163"/>
+                                <rect key="frame" x="32" y="371.5" width="350" height="163"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NU1-es-xK1">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
@@ -50,12 +67,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CBM-BO-9ij" firstAttribute="leading" secondItem="ypp-26-b9x" secondAttribute="leading" constant="32" id="31f-NX-se8"/>
+                            <constraint firstItem="vot-XK-FOk" firstAttribute="leading" secondItem="ypp-26-b9x" secondAttribute="leading" id="5kQ-Bq-wqu"/>
                             <constraint firstItem="ypp-26-b9x" firstAttribute="trailing" secondItem="CBM-BO-9ij" secondAttribute="trailing" constant="32" id="6W8-fa-Jdj"/>
-                            <constraint firstItem="CBM-BO-9ij" firstAttribute="top" secondItem="ypp-26-b9x" secondAttribute="top" constant="200" id="IET-6P-k8s"/>
+                            <constraint firstItem="CBM-BO-9ij" firstAttribute="centerY" secondItem="ypp-26-b9x" secondAttribute="centerY" id="G20-RQ-SaT"/>
+                            <constraint firstItem="vot-XK-FOk" firstAttribute="top" secondItem="ypp-26-b9x" secondAttribute="top" id="dzr-AT-eXb"/>
+                            <constraint firstItem="CBM-BO-9ij" firstAttribute="top" secondItem="vot-XK-FOk" secondAttribute="bottom" id="v8w-ld-PFW"/>
+                            <constraint firstItem="ypp-26-b9x" firstAttribute="trailing" secondItem="vot-XK-FOk" secondAttribute="trailing" id="yBb-Es-cp2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="NU1-es-xK1" id="swy-xC-pYJ"/>
+                        <outlet property="logoImageView" destination="ctK-Bc-0bE" id="sJ5-xM-DXS"/>
                         <outlet property="passwordTextField" destination="0PP-PE-rub" id="APT-RR-BlB"/>
                     </connections>
                 </viewController>
