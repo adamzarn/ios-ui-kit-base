@@ -18,6 +18,14 @@ class LoginViewController: UIViewController, StoryboardLoadable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+            if let path = Bundle.main.path(forResource: "PlaceDescription", ofType: "json") {
+                do {
+                    let data = try Data(contentsOf: URL(fileURLWithPath: path),
+                                          options: .mappedIfSafe)
+                    let jsonString = String(data: data, encoding: .utf8)
+                } catch {
+                }
+            }
         logoImageView.image = UIImage(named: "logo")
         emailTextField.addTarget(self,
                                  action: #selector(emailDidChange(_:)),

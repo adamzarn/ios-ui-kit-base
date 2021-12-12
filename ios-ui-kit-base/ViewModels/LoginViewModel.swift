@@ -8,13 +8,13 @@
 import Foundation
 
 class LoginViewModel {
-    let network: Network
+    let network: NetworkManager
     
     var keyboardIsShowing: Bool = false
     var email: String = ""
     var password: String = ""
     
-    init(network: Network = Network()) {
+    init(network: NetworkManager = Network()) {
         self.network = network
     }
     

@@ -23,8 +23,6 @@
 		DB488F902731B7DB00471CD1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F8F2731B7DB00471CD1 /* Network.swift */; };
 		DB488F922731B9EF00471CD1 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F912731B9EF00471CD1 /* LoginResponse.swift */; };
 		DB488F942731BBEC00471CD1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F932731BBEC00471CD1 /* API.swift */; };
-		DB488F962731DCC400471CD1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F952731DCC400471CD1 /* Endpoint.swift */; };
-		DB488F992731DF1F00471CD1 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F982731DF1F00471CD1 /* Authorization.swift */; };
 		DB488F9B273220A600471CD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F9A273220A600471CD1 /* LoginViewController.swift */; };
 		DB488F9E2732282000471CD1 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F9D2732282000471CD1 /* StoryboardLoadable.swift */; };
 		DB488FA02732284C00471CD1 /* StoryboardSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F9F2732284C00471CD1 /* StoryboardSelector.swift */; };
@@ -45,6 +43,11 @@
 		DB6B184C2736280D006F6C26 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B184B2736280C006F6C26 /* UIWindow+Extension.swift */; };
 		DB7B47DE273780790009CE97 /* NotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7B47DD273780790009CE97 /* NotificationCenter+Extension.swift */; };
 		DB7B47E0273780930009CE97 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7B47DF273780930009CE97 /* Notification+Extension.swift */; };
+		DBB3CAC82766AEA700708775 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3CAC72766AEA700708775 /* URLRequestConvertible.swift */; };
+		DBB3CACA2766AEED00708775 /* ProdEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3CAC92766AEED00708775 /* ProdEndpoints.swift */; };
+		DBB3CACC2766AF8B00708775 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3CACB2766AF8B00708775 /* Method.swift */; };
+		DBB3CACE2766AFA200708775 /* ProdAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3CACD2766AFA200708775 /* ProdAPI.swift */; };
+		DBB3CAD22766B32900708775 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3CAD12766B32900708775 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +88,6 @@
 		DB488F8F2731B7DB00471CD1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		DB488F912731B9EF00471CD1 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		DB488F932731BBEC00471CD1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		DB488F952731DCC400471CD1 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		DB488F982731DF1F00471CD1 /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 		DB488F9A273220A600471CD1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DB488F9D2732282000471CD1 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
 		DB488F9F2732284C00471CD1 /* StoryboardSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSelector.swift; sourceTree = "<group>"; };
@@ -107,6 +108,11 @@
 		DB6B184B2736280C006F6C26 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		DB7B47DD273780790009CE97 /* NotificationCenter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extension.swift"; sourceTree = "<group>"; };
 		DB7B47DF273780930009CE97 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
+		DBB3CAC72766AEA700708775 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		DBB3CAC92766AEED00708775 /* ProdEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdEndpoints.swift; sourceTree = "<group>"; };
+		DBB3CACB2766AF8B00708775 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		DBB3CACD2766AFA200708775 /* ProdAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdAPI.swift; sourceTree = "<group>"; };
+		DBB3CAD12766B32900708775 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,10 +242,11 @@
 		DB488F972731DF0600471CD1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				DBB3CAD12766B32900708775 /* NetworkManager.swift */,
 				DB488F8F2731B7DB00471CD1 /* Network.swift */,
-				DB488F932731BBEC00471CD1 /* API.swift */,
-				DB488F952731DCC400471CD1 /* Endpoint.swift */,
-				DB488F982731DF1F00471CD1 /* Authorization.swift */,
+				DBB3CAC72766AEA700708775 /* URLRequestConvertible.swift */,
+				DBB3CACB2766AF8B00708775 /* Method.swift */,
+				DBB3CACF2766AFC700708775 /* API */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -284,6 +291,24 @@
 				DB6B183927358B3A006F6C26 /* PostTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DBB3CACF2766AFC700708775 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DB488F932731BBEC00471CD1 /* API.swift */,
+				DBB3CAD02766AFD800708775 /* Prod */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DBB3CAD02766AFD800708775 /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				DBB3CACD2766AFA200708775 /* ProdAPI.swift */,
+				DBB3CAC92766AEED00708775 /* ProdEndpoints.swift */,
+			);
+			path = Prod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,23 +451,26 @@
 				DB488F5A2731B20500471CD1 /* FeedViewController.swift in Sources */,
 				DB6B183C27358C7C006F6C26 /* NibLoadable.swift in Sources */,
 				DB488F8D2731B48200471CD1 /* User.swift in Sources */,
+				DBB3CACC2766AF8B00708775 /* Method.swift in Sources */,
 				DB6B184227359089006F6C26 /* TableViewRegistrationManager.swift in Sources */,
+				DBB3CAD22766B32900708775 /* NetworkManager.swift in Sources */,
 				DB488F882731B2F000471CD1 /* Keychain.swift in Sources */,
 				DB6B184C2736280D006F6C26 /* UIWindow+Extension.swift in Sources */,
 				DB6B183627358AED006F6C26 /* PostTableViewCell.swift in Sources */,
 				DB488FA02732284C00471CD1 /* StoryboardSelector.swift in Sources */,
 				DB6B183E27358CA6006F6C26 /* UIView+Extension.swift in Sources */,
 				DB6B18462735CAAB006F6C26 /* ImageCache.swift in Sources */,
+				DBB3CAC82766AEA700708775 /* URLRequestConvertible.swift in Sources */,
 				DB6B18442735919F006F6C26 /* FeedViewModel.swift in Sources */,
-				DB488F992731DF1F00471CD1 /* Authorization.swift in Sources */,
 				DB488FA22732287400471CD1 /* StoryboardIdentifier.swift in Sources */,
 				DB7B47DE273780790009CE97 /* NotificationCenter+Extension.swift in Sources */,
 				DB6B18482735D0D9006F6C26 /* MainTabBarController.swift in Sources */,
-				DB488F962731DCC400471CD1 /* Endpoint.swift in Sources */,
 				DB488F9E2732282000471CD1 /* StoryboardLoadable.swift in Sources */,
+				DBB3CACA2766AEED00708775 /* ProdEndpoints.swift in Sources */,
 				DB488F562731B20500471CD1 /* AppDelegate.swift in Sources */,
 				DB6B184A27361E0F006F6C26 /* LoginViewModel.swift in Sources */,
 				DB488F902731B7DB00471CD1 /* Network.swift in Sources */,
+				DBB3CACE2766AFA200708775 /* ProdAPI.swift in Sources */,
 				DB6B183827358B0A006F6C26 /* PostTableViewCellViewModel.swift in Sources */,
 				DB488F922731B9EF00471CD1 /* LoginResponse.swift in Sources */,
 				DB488FAA2732362800471CD1 /* Post.swift in Sources */,

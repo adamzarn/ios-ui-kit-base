@@ -10,9 +10,9 @@ import UIKit
 
 class FeedViewModel: TableViewRegistrationManager {
     var cellNibTypes: [UITableViewCell.Type] = [PostTableViewCell.self]
-    let network: Network
+    let network: NetworkManager
     
-    init(network: Network = Network()) {
+    init(network: NetworkManager = Network()) {
         self.network = network
     }
     

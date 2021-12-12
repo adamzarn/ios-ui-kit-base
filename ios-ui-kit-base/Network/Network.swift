@@ -7,18 +7,17 @@
 
 import Foundation
 
-class Network {
+class Network: NetworkManager {
     let api: API
     
-    init(api: API = API()) {
+    init(api: API = ProdAPI()) {
         self.api = api
     }
     
     func login(email: String,
                password: String,
                completion: @escaping (LoginResponse?) -> Void) {
-        api.update(withEmail: email, andPassword: password)
-        guard let request = api.getRequest(forEndpoint: .login) else {
+        guard let request = api.loginRequest(email: email, password: password) else {
             completion(nil)
             return
         }
@@ -39,7 +38,7 @@ class Network {
     
     func logout(onSuccess: @escaping () -> Void,
                 onFailure: @escaping (Error?) -> Void) {
-        guard let request = api.getRequest(forEndpoint: .logout) else {
+        guard let request = api.logoutRequest() else {
             onFailure(nil); return
         }
         URLSession.shared.dataTask(with: request, completionHandler: { _, _, error in
@@ -54,7 +53,7 @@ class Network {
     }
     
     func getFeed(completion: @escaping ([Post]) -> Void) {
-        guard let request = api.getRequest(forEndpoint: .getFeed) else {
+        guard let request = api.getFeedRequest() else {
             completion([]); return
         }
         URLSession.shared.dataTask(with: request, completionHandler: { data, response, error in
@@ -72,13 +71,15 @@ class Network {
     
     func getProfilePhoto(urlString: String?,
                          completion: @escaping (Data?) -> Void) {
-        guard let urlString = urlString, let url = URL(string: urlString) else {
+        guard let urlString = urlString else {
             completion(nil); return
         }
         if let data = ImageCache.shared.getData(forKey: urlString) {
             completion(data); return
         }
-        let urlRequest = URLRequest(url: url)
+        guard let urlRequest = api.getProfilePhotoRequest(urlString: urlString) else {
+            completion(nil); return
+        }
         URLSession.shared.dataTask(with: urlRequest, completionHandler: { data, _, error in
             guard let data = data else {
                 completion(nil)

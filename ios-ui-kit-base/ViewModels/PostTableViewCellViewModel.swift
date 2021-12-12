@@ -10,7 +10,7 @@ import UIKit
 
 class PostTableViewCellViewModel {
     let post: Post
-    let network: Network
+    let network: NetworkManager
     
     var nameLabelText: String {
         return post.user.fullName
@@ -29,7 +29,7 @@ class PostTableViewCellViewModel {
     }
     
     init(post: Post,
-         network: Network = Network()) {
+         network: NetworkManager = Network()) {
         self.post = post
         self.network = network
     }
