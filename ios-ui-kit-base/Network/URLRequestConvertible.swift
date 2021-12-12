@@ -15,3 +15,19 @@ protocol URLRequestConvertible {
     var url: URL? { get }
     var urlRequest: URLRequest? { get }
 }
+
+extension URLRequestConvertible {
+    var url: URL? {
+        var urlString = baseUrl
+        urlString += path ?? ""
+        return URL(string: urlString)
+    }
+    
+    var urlRequest: URLRequest? {
+        guard let url = url else { return nil }
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = httpMethod
+        urlRequest.allHTTPHeaderFields = allHTTPHeaderFields
+        return urlRequest
+    }
+}

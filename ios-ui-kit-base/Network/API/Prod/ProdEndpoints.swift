@@ -62,20 +62,6 @@ enum ProdEndpoints: URLRequestConvertible {
         return headers
     }
     
-    var url: URL? {
-        var urlString = baseUrl
-        urlString += path ?? ""
-        return URL(string: urlString)
-    }
-    
-    var urlRequest: URLRequest? {
-        guard let url = url else { return nil }
-        var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = httpMethod
-        urlRequest.allHTTPHeaderFields = allHTTPHeaderFields
-        return urlRequest
-    }
-    
     private func getBasicHeaderValue(_ email: String, _ password: String) -> String? {
         let emailPasswordString = "\(email):\(password)"
         let base64EncodedEmailPasswordString = Data(emailPasswordString.utf8).base64EncodedString()
