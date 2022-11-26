@@ -20,7 +20,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
         if Keychain.token == nil {
-            window.setRootViewController(ofType: LoginViewController.self)
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let loginViewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController")
+            window.rootViewController = loginViewController
+            window.makeKeyAndVisible()
+            
+            // window.setRootViewController(ofType: LoginViewController.self)
         } else {
             window.setRootViewController(ofType: MainTabBarController.self)
         }

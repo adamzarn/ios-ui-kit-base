@@ -12,6 +12,7 @@ protocol URLRequestConvertible {
     var path: String? { get }
     var httpMethod: String { get }
     var allHTTPHeaderFields: [String: String] { get }
+    var httpBody: Data? { get }
     var url: URL? { get }
     var urlRequest: URLRequest? { get }
 }
@@ -27,6 +28,7 @@ extension URLRequestConvertible {
         guard let url = url else { return nil }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = httpMethod
+        urlRequest.httpBody = httpBody
         urlRequest.allHTTPHeaderFields = allHTTPHeaderFields
         return urlRequest
     }

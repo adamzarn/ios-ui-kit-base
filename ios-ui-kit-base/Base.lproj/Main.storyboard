@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JAO-xq-5yY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JAO-xq-5yY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -75,6 +75,8 @@
                             <constraint firstItem="ypp-26-b9x" firstAttribute="trailing" secondItem="vot-XK-FOk" secondAttribute="trailing" id="yBb-Es-cp2"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="emailTextField" destination="NU1-es-xK1" id="swy-xC-pYJ"/>
                         <outlet property="logoImageView" destination="ctK-Bc-0bE" id="sJ5-xM-DXS"/>
@@ -83,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEI-eE-Ri7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1004.3478260869566" y="-613.39285714285711"/>
+            <point key="canvasLocation" x="-1004" y="-804"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="jy8-OP-Uxg">
@@ -96,7 +98,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="P8R-0T-8fR" kind="relationship" relationship="viewControllers" id="e6x-0g-sFS"/>
+                        <segue destination="P8R-0T-8fR" kind="relationship" relationship="viewControllers" id="nTy-xE-TIb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGa-F8-KfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

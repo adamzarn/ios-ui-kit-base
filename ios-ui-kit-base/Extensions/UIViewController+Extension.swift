@@ -25,15 +25,12 @@ extension UIViewController {
                                 keyboardDidHide: Selector? = nil) {
         if let keyboardWillShow = keyboardWillShow {
             observe(UIResponder.keyboardWillShowNotification, selector: keyboardWillShow)
-
         }
         if let keyboardDidShow = keyboardDidShow {
             observe(UIResponder.keyboardDidShowNotification, selector: keyboardDidShow)
-
         }
         if let keyboardWillHide = keyboardWillHide {
             observe(UIResponder.keyboardWillHideNotification, selector: keyboardWillHide)
-
         }
         if let keyboardDidHide = keyboardDidHide {
             observe(UIResponder.keyboardDidHideNotification, selector: keyboardDidHide)

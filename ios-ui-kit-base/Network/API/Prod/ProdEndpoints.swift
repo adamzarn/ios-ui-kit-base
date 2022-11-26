@@ -5,13 +5,14 @@
 //  Created by Adam Zarn on 12/12/21.
 //
 
-import Foundation
+// import Foundation
 import UIKit
 
 enum ProdEndpoints: URLRequestConvertible {
     case login(email: String, password: String)
     case logout
     case getFeed
+    case createPost(newPost: NewPost)
     case getProfilePhoto(urlString: String)
 
     var baseUrl: String {
@@ -26,7 +27,8 @@ enum ProdEndpoints: URLRequestConvertible {
         case .login: return "/auth/login"
         case .logout: return "/auth/logout"
         case .getFeed: return "/posts/feed"
-        default: return nil
+        case .createPost: return "/posts"
+        case .getProfilePhoto: return nil
         }
     }
     
@@ -35,9 +37,19 @@ enum ProdEndpoints: URLRequestConvertible {
         switch self {
         case .login: method = .POST
         case .logout: method = .DELETE
-        default: method = .GET
+        case .getFeed: method = .GET
+        case .createPost: method = .POST
+        case .getProfilePhoto: method = .GET
         }
         return method.rawValue
+    }
+    
+    var httpBody: Data? {
+        let encoder = JSONEncoder()
+        switch self {
+        case .createPost(let newPost): return try? encoder.encode(newPost)
+        default: return nil
+        }
     }
     
     var deviceIdHeaderValue: String? {

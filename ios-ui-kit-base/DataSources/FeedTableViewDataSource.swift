@@ -25,4 +25,8 @@ class FeedTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
         cell.setup(with: viewModel)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
 }

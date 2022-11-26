@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SwiftUI
 
-class FeedViewController: UIViewController {
+class FeedViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     let viewModel = FeedViewModel()
@@ -18,6 +19,7 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
         configureNavigationItem()
         configureTableView()
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

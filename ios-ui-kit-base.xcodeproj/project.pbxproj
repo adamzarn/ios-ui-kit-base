@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB0A228B2734BEF300AFE26A /* FeedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A228A2734BEF300AFE26A /* FeedTableViewDataSource.swift */; };
+		DB2CD2FB2794B99E00DF320C /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CD2FA2794B99E00DF320C /* NewPost.swift */; };
 		DB488F562731B20500471CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F552731B20500471CD1 /* AppDelegate.swift */; };
 		DB488F582731B20500471CD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F572731B20500471CD1 /* SceneDelegate.swift */; };
 		DB488F5A2731B20500471CD1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB488F592731B20500471CD1 /* FeedViewController.swift */; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		DB0A228A2734BEF300AFE26A /* FeedTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewDataSource.swift; sourceTree = "<group>"; };
+		DB2CD2FA2794B99E00DF320C /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
 		DB488F522731B20500471CD1 /* ios-ui-kit-base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-ui-kit-base.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB488F552731B20500471CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB488F572731B20500471CD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				DB488FA92732362800471CD1 /* Post.swift */,
 				DB488F912731B9EF00471CD1 /* LoginResponse.swift */,
 				DB488FA12732287400471CD1 /* StoryboardIdentifier.swift */,
+				DB2CD2FA2794B99E00DF320C /* NewPost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				DB488F922731B9EF00471CD1 /* LoginResponse.swift in Sources */,
 				DB488FAA2732362800471CD1 /* Post.swift in Sources */,
 				DB488F942731BBEC00471CD1 /* API.swift in Sources */,
+				DB2CD2FB2794B99E00DF320C /* NewPost.swift in Sources */,
 				DB488F582731B20500471CD1 /* SceneDelegate.swift in Sources */,
 				DB6B184027358DD7006F6C26 /* UITableView+Extension.swift in Sources */,
 			);

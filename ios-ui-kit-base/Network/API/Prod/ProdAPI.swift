@@ -20,4 +20,7 @@ class ProdAPI: API {
     func getProfilePhotoRequest(urlString: String) -> URLRequest? {
         return ProdEndpoints.getProfilePhoto(urlString: urlString).urlRequest
     }
+    func getCreatePostRequest(newPost: NewPost) -> URLRequest? {
+        return ProdEndpoints.createPost(newPost: newPost).urlRequest
+    }
 }
